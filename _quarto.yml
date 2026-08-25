@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "My Site"
+  title: "Title in _quarto.yml"
   navbar:
     left:
       - href: index.qmd
