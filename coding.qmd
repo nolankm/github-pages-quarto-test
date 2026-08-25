@@ -1,0 +1,16 @@
+## Prepare R for connection to Redshift via JDBC
+
+### Get the Redshift JDBC driver
+* This driver is required to connect R to Redshift.
+* Navigate to https://docs.aws.amazon.com/redshift/latest/mgmt/jdbc20-download-driver.html
+* Download from the link "JDBC 4.2–compatible driver version 2.x (without the AWS SDK)". The file that downloads should be named like this: "redshift-jdbc42-2.xx.xx.jar"
+* Move the downloaded .jar file out of your Downloads folder to a suitable location in your file system.
+
+
+### Install necessary packages in R
+```
+install.packages("DBI")
+install.packages("rJava")
+install.packages("RJDBC")
+install.packages("rstudioapi")
+```
