@@ -2,28 +2,28 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Title goes here",
+    "title": "Title in index.qmd",
     "section": "",
     "text": "Column 1\nDescription\n\n\n\n\nText\nText\n\n\n\n\n\nwith some text\n \n\n\n\n\n\n\nSome text"
   },
   {
     "objectID": "index.html#a-smaller-section",
     "href": "index.html#a-smaller-section",
-    "title": "Title goes here",
+    "title": "Title in index.qmd",
     "section": "",
     "text": "Column 1\nDescription\n\n\n\n\nText\nText\n\n\n\n\n\nwith some text"
   },
   {
     "objectID": "index.html#attrition-table",
     "href": "index.html#attrition-table",
-    "title": "Title goes here",
+    "title": "Title in index.qmd",
     "section": "",
     "text": "Some text"
   },
   {
     "objectID": "index.html#table-1.-characteristics",
     "href": "index.html#table-1.-characteristics",
-    "title": "Title goes here",
+    "title": "Title in index.qmd",
     "section": "Table 1. Characteristics",
     "text": "Table 1. Characteristics\nSome text"
   }
