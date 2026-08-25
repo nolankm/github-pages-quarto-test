@@ -96,11 +96,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./coding.html"> 
+    <a class="nav-link active" href="./coding.html" aria-current="page"> 
 <span class="menu-text">Coding</span></a>
   </li>  
 </ul>
@@ -118,15 +118,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#a-big-section" id="toc-a-big-section" class="nav-link active" data-scroll-target="#a-big-section">A big section</a>
-  <ul class="collapse">
-  <li><a href="#a-smaller-section" id="toc-a-smaller-section" class="nav-link" data-scroll-target="#a-smaller-section">A smaller section</a></li>
-  <li><a href="#attrition-table" id="toc-attrition-table" class="nav-link" data-scroll-target="#attrition-table">Attrition Table</a></li>
-  </ul></li>
-  <li><a href="#characteristics" id="toc-characteristics" class="nav-link" data-scroll-target="#characteristics">CHARACTERISTICS</a>
-  <ul class="collapse">
-  <li><a href="#table-1.-characteristics" id="toc-table-1.-characteristics" class="nav-link" data-scroll-target="#table-1.-characteristics">Table 1. Characteristics</a></li>
-  </ul></li>
+  <li><a href="#prepare-r-for-connection-to-redshift-via-jdbc" id="toc-prepare-r-for-connection-to-redshift-via-jdbc" class="nav-link active" data-scroll-target="#prepare-r-for-connection-to-redshift-via-jdbc">Prepare R for connection to Redshift via JDBC</a></li>
   </ul>
 </nav>
 </nav>
@@ -135,69 +127,28 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Title in index.qmd</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="a-big-section" class="level1">
-<h1>A big section</h1>
-<section id="a-smaller-section" class="level2">
-<h2 class="anchored" data-anchor-id="a-smaller-section">A smaller section</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Column 1</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Text</td>
-<td>Text</td>
-</tr>
-</tbody>
-</table>
-<section id="a-third-level-section" class="level3">
-<h3 class="anchored" data-anchor-id="a-third-level-section">A third level section</h3>
-<p>with some text</p>
-<p><br> <br></p>
-<!----------------------------------------------------------------------------->
-<!-- 2. ATTRITION
-<!----------------------------------------------------------------------------->
+<section id="prepare-r-for-connection-to-redshift-via-jdbc" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-r-for-connection-to-redshift-via-jdbc">Prepare R for connection to Redshift via JDBC</h2>
+<section id="get-the-redshift-jdbc-driver" class="level3">
+<h3 class="anchored" data-anchor-id="get-the-redshift-jdbc-driver">Get the Redshift JDBC driver</h3>
+<ul>
+<li>This driver is required to connect R to Redshift.</li>
+<li>Navigate to https://docs.aws.amazon.com/redshift/latest/mgmt/jdbc20-download-driver.html</li>
+<li>Download from the link “JDBC 4.2–compatible driver version 2.x (without the AWS SDK)”. The file that downloads should be named like this: “redshift-jdbc42-2.xx.xx.jar”</li>
+<li>Move the downloaded .jar file out of your Downloads folder to a suitable location in your file system.</li>
+</ul>
 </section>
-</section>
-<section id="attrition-table" class="level2">
-<h2 class="anchored" data-anchor-id="attrition-table">Attrition Table</h2>
-<p>Some text</p>
-<p><br> <br></p>
-<!----------------------------------------------------------------------------->
-<!-- 3. CHARACTERISTICS
-<!----------------------------------------------------------------------------->
-</section>
-</section>
-<section id="characteristics" class="level1">
-<h1>CHARACTERISTICS</h1>
-<section id="table-1.-characteristics" class="level2">
-<h2 class="anchored" data-anchor-id="table-1.-characteristics">Table 1. Characteristics</h2>
-<p>Some text</p>
-<p><br></p>
+<section id="install-necessary-packages-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="install-necessary-packages-in-r">Install necessary packages in R</h3>
+<pre><code>install.packages("DBI")
+install.packages("rJava")
+install.packages("RJDBC")
+install.packages("rstudioapi")</code></pre>
 
 
 </section>

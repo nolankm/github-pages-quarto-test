@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "coding.html",
+    "href": "coding.html",
+    "title": "EpiRWE Oncology Analytics Handbook",
+    "section": "",
+    "text": "This driver is required to connect R to Redshift.\nNavigate to https://docs.aws.amazon.com/redshift/latest/mgmt/jdbc20-download-driver.html\nDownload from the link “JDBC 4.2–compatible driver version 2.x (without the AWS SDK)”. The file that downloads should be named like this: “redshift-jdbc42-2.xx.xx.jar”\nMove the downloaded .jar file out of your Downloads folder to a suitable location in your file system.\n\n\n\n\ninstall.packages(\"DBI\")\ninstall.packages(\"rJava\")\ninstall.packages(\"RJDBC\")\ninstall.packages(\"rstudioapi\")"
+  },
+  {
+    "objectID": "coding.html#prepare-r-for-connection-to-redshift-via-jdbc",
+    "href": "coding.html#prepare-r-for-connection-to-redshift-via-jdbc",
+    "title": "EpiRWE Oncology Analytics Handbook",
+    "section": "",
+    "text": "This driver is required to connect R to Redshift.\nNavigate to https://docs.aws.amazon.com/redshift/latest/mgmt/jdbc20-download-driver.html\nDownload from the link “JDBC 4.2–compatible driver version 2.x (without the AWS SDK)”. The file that downloads should be named like this: “redshift-jdbc42-2.xx.xx.jar”\nMove the downloaded .jar file out of your Downloads folder to a suitable location in your file system.\n\n\n\n\ninstall.packages(\"DBI\")\ninstall.packages(\"rJava\")\ninstall.packages(\"RJDBC\")\ninstall.packages(\"rstudioapi\")"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Title in index.qmd",
